@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #022f6ddd;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #022f6dc2;
+}
+.logo-icon{
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display :flex;
+  font-family:'Poppins';
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.download-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+#login{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+#login, .download-btn{
+    margin: 12px;
+    padding: 8px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  min-height: 80vh;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image .cards {
+  width: 300px;
+  margin-top: 80px;
+}
