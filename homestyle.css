@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #022f6ddd;
+  background-color: #022f6dc2;
   color: white;
 }
 
@@ -34,10 +34,13 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+nav a:hover {
+  color: #f3c13a;
 }
 
-.download-btn {
+.btn {
   background: none;
   border: 1px solid white;
   color: white;
@@ -47,35 +50,53 @@ nav a {
   font-size: 0.9rem;
 }
 #login{
-    background: none;
+    background-color: white;
     border: 1px solid white;
-    color: white;
+    color: #022f6dc2;
+    transition: all 0.3s ease;
     border-radius: 30px;
     padding: 8px 16px;
     cursor: pointer;
     font-size: 0.9rem;
 }
-#login, .download-btn{
-    margin: 12px;
-    padding: 8px;
+#login:hover {
+  opacity: 0.85;
+}
+
+#login .arrow {
+  transition: all 0.3s ease;
+}
+
+#login:hover .arrow {
+  content: "→";     
+  display: inline-block;
+  transform: translateX(2px); 
+}
+
+
+.nav-btn{
+    display: flex;
+    margin: 0px;
+    padding: 10px 16px;
+    gap: 12px;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
+  padding: 60px 150px;
   min-height: 80vh;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #ddd;
 }
 
@@ -84,6 +105,6 @@ nav a {
 }
 
 .hero-image .cards {
-  width: 300px;
+  width: 400px;
   margin-top: 80px;
 }
