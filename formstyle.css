@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #f5f9ff;
+}
+
+.sidebar {
+  width: 35%;
+  background: linear-gradient(135deg, #2b3a67, #3a4d8f);
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.sidebar h1 span {
+  background: linear-gradient(90deg, #37b6ff, #d039ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px ;
+}
+
+.features {
+  margin-top: 20px;
+}
+
+.features li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.features li::before {
+  content: "✔";
+  color: #00d4ff;
+  position: absolute;
+  left: 0;
+}
+
+.form-container {
+  width: 65%;
+  padding: 100px 5px 15px 5px; 
+  background: white;
+  padding: 40px 60px;
+}
+
+.step-indicator {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.radio-group input {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  background: #2b3a67;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #1d284a;
+}

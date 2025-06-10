@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IppoPay Personal Loan Form</title>
+  <link rel="stylesheet" href="formstyle.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h1><span>IppoPay</span><br>Personal Loan</h1>
+    <ul class="features">
+      <li>Low interest rates with daily reducing balance</li>
+      <li>Low processing charges</li>
+      <li>No hidden or administrative costs</li>
+      <li>Minimal documentation required</li>
+      <li>No prepayment penalties</li>
+    </ul>
+  </div>
+
+  <div class="form-container">
+    <div class="step-indicator">Step 1 of 3</div>
+    <div class="form-title">Loan Purpose</div>
+
+    <div class="form-group">
+      <label for="loanPurpose">Purpose of loan</label>
+      <select id="loanPurpose" required>
+        <option value="">-- Select Purpose --</option>
+        <option value="personal">Personal Loan</option>
+        <option value="education">Education Loan</option>
+        <option value="business">Business Loan</option>
+      </select>
+    </div>
+
+    <div class="form-title">Relationship</div>
+
+    <div class="form-group">
+      <label>Do you have an existing relationship with IppoPay?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="relationship" value="yes" required /> Yes</label>
+        <label><input type="radio" name="relationship" value="no" /> No</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Type of Relationship</label>
+      <select id="type" required>
+        <option value="">-- Select --</option>
+        <option value="savings">UPI user</option>
+        <option value="loan">Existing Loan</option>
+        <option value="credit">Credit Card</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="account">Account Number</label>
+      <input type="text" id="account" placeholder="Enter your account number" />
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile Number with ISD Code</label>
+      <input type="text" id="mobile" placeholder="+91XXXXXXXXXX" />
+    </div>
+
+    <button class="submit-btn">Next</button>
+  </div>
+</body>
+</html>
