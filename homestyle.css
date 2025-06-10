@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #022f6dc2;
+  background-color: #022f6dee;
   color: white;
 }
 
@@ -20,7 +20,8 @@ body {
 .logo-icon{
   width: 24px;
   height: 24px;
-  margin-right: 8px;
+  margin-top: 5px;
+  padding-top: 5px;
 }
 
 .logo {
@@ -49,28 +50,38 @@ nav a:hover {
   cursor: pointer;
   font-size: 0.9rem;
 }
-#login{
-    background-color: white;
-    border: 1px solid white;
-    color: #022f6dc2;
-    transition: all 0.3s ease;
-    border-radius: 30px;
-    padding: 8px 16px;
-    cursor: pointer;
-    font-size: 0.9rem;
+#login {
+  background-color: white;
+  color: #022f6dc2;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 #login:hover {
   opacity: 0.85;
 }
 
-#login .arrow {
-  transition: all 0.3s ease;
+.arrow {
+  transition: opacity 0.3s ease;
 }
 
-#login:hover .arrow {
-  content: "→";     
-  display: inline-block;
-  transform: translateX(2px); 
+.default-arrow {
+  opacity: 1;
+}
+
+.hover-arrow {
+  opacity: 0;
+}
+
+#login:hover .default-arrow {
+  opacity: 0;
+}
+
+#login:hover .hover-arrow {
+  opacity: 1;
 }
 
 
@@ -107,4 +118,69 @@ nav a:hover {
 .hero-image .cards {
   width: 400px;
   margin-top: 80px;
+}
+.why-ippopay {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f7f9fc;
+  color: #022f6d;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #377dff, #b968ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 24px 20px;
+  width: 280px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 12px 0 8px;
+  color: #022f6d;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
 }
