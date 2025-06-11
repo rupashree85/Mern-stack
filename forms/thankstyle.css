@@ -1,38 +1,57 @@
-
-* {
-  box-sizing: border-box;
+body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
 }
 
-body {
-  display: flex;
-  min-height: 100vh;
-  background-color: #f4f6f8;
-  color: #333;
-}
-.arigato{
-  width: 100%;
-  padding: 50px 40px;
-  background-color: #ffffff;
+.thankyou-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1f5f9;
 }
+
+.thankyou-card {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+}
+
+.arigato {
+  font-size: 50px;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+.thankyou-card h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1d3557;
+}
+
+.thankyou-card p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
 .goback-btn {
-  display: block;
-  margin: 20px auto 0 auto; 
+  display: inline-block;
   padding: 12px 30px;
   background-color: #1d3557;
   color: white;
-  border: none;
+  text-decoration: none;
   font-size: 16px;
   border-radius: 6px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 
 .goback-btn:hover {
   background-color: #457b9d;

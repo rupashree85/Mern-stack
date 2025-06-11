@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>IppoPay Dashboard</title>
+  <link rel="stylesheet" href="sidebar.css" />
+  <link rel="stylesheet" href="tablestyle.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">IppoPay</div>
+      <nav class="nav-links">
+        <a href="#" class="active">Check Status</a>
+        <a href="#">Make Payment</a>
+        <a href="#">Loan History</a>
+        <a href="#">EMI Schedule</a>
+        <a href="#">Support</a>
+      </nav>
+    </aside>
+    <div class="main-content">
+      <div class="top-bar">
+        <button class="signout-btn">Sign Out</button>
+      </div>
+
+      <div class="status-container">
+        <h2>My Loan Application Status</h2>
+        <table class="status-table">
+          <thead>
+            <tr>
+              <th>Loan Type</th>
+              <th>Amount</th>
+              <th>Status</th>
+              <th>EMI Start Date</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Personal</td>
+              <td>₹50,000</td>
+              <td class="approved">Approved</td>
+              <td>15-Jun-2025</td>
+              <td>10-Jun-2025</td>
+            </tr>
+            <tr>
+              <td>Business</td>
+              <td>₹1,20,000</td>
+              <td class="pending">Pending</td>
+              <td>--</td>
+              <td>11-Jun-2025</td>
+            </tr>
+            <tr>
+              <td>Education</td>
+              <td>₹80,000</td>
+              <td class="rejected">Rejected</td>
+              <td>--</td>
+              <td>05-Jun-2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
