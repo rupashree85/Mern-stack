@@ -1,0 +1,39 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  color: #333;
+}
+.arigato{
+  width: 100%;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.goback-btn {
+  display: block;
+  margin: 20px auto 0 auto; 
+  padding: 12px 30px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.goback-btn:hover {
+  background-color: #457b9d;
+}
