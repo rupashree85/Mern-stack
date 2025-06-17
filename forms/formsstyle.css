@@ -1,4 +1,3 @@
-/* Reset default styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +12,6 @@ body {
   color: #333;
 }
 
-/* Sidebar Styling */
 .sidebar {
   width: 30%;
   background: linear-gradient(to bottom right, #1d3557, #457b9d);
@@ -53,7 +51,6 @@ body {
   left: 0;
 }
 
-/* Form Container Styling */
 .form-container {
   width: 70%;
   padding: 50px 40px;
@@ -88,26 +85,38 @@ body {
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
+  width: 100%;
+  max-width: 500px;
 }
 
-textarea {
-  resize: vertical;
-}
 .phone-combined {
   display: flex;
+  align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
-.phone-combined select {
-  width: 75px;
+.phone-combined select,
+.phone-combined input {
   padding: 10px;
+  height: 45px; /* Ensures uniform height */
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
 }
 
+.phone-combined select {
+  width: 100px;
+}
+
 .phone-combined input {
   flex: 1;
+  min-width: 200px;
+}
+
+textarea{
+    resize: vertical;
 }
 
 .radio-group {
@@ -137,39 +146,3 @@ textarea {
   background-color: #457b9d;
 }
 
-/* Thank You Page Centering */
-.form-container h1 {
-  color: #1d3557;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.form-container p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-.arigato{
-  width: 100%;
-  padding: 50px 40px;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.goback-btn {
-  display: block;
-  margin: 20px auto 0 auto; 
-  padding: 12px 30px;
-  background-color: #1d3557;
-  color: white;
-  border: none;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-
-.goback-btn:hover {
-  background-color: #457b9d;
-}
